@@ -7,6 +7,9 @@
 
 -->
 
+The minimum number of members of an assembly or society that must be present at any of its meetings to make the proceedings of that meeting valid. There were just about enough people present to form a quorum.
+
+
 [SimpleVote](http://simplevote.tk) is an open-source, self-hostable, **live-updating** voting/polling platform, for both live meetings, or extended polls. 
 
 Polls can be dynamic, meaning users can(*if allowed*) contribute options and questions themselves.
