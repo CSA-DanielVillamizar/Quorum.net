@@ -1,20 +1,12 @@
-[SimpleVote](http://simplevote.tk) &mdash; An open-source, live updating, voting platform.
+﻿[Quorum.net](http://Quorum.net.tk) &mdash; An open-source, live updating, voting platform.
 ==========
-![](http://img.shields.io/version/1.1.0.png?color=green)
-[![Build Status](https://travis-ci.org/dessalines/simple-vote.svg?branch=master)](https://travis-ci.org/dessalines/simple-vote)
-
-<!---
-
--->
 
 The minimum number of members of an assembly or society that must be present at any of its meetings to make the proceedings of that meeting valid. There were just about enough people present to form a quorum.
 
-
-[SimpleVote](http://simplevote.tk) is an open-source, self-hostable, **live-updating** voting/polling platform, for both live meetings, or extended polls. 
+[Quorum.net](http://Quorum.net.tk) is an open-source, self-hostable, **live-updating** voting/polling platform, for both live meetings, or extended polls. 
 
 Polls can be dynamic, meaning users can(*if allowed*) contribute options and questions themselves.
 
-It uses [range voting](http://rangevoting.org/UniqBest.html) (also known as olympic score voting) for all your poll options. [Range voting](http://rangevoting.org/) is *more expressive* than simple :thumbsup: or :thumbsdown: votes (IE [approval](http://rangevoting.org/AppExec.html)). It also beats out [IRV](http://rangevoting.org/rangeVirv.html), and [first past the post](http://rangevoting.org/Plurality.html) for [minimizing voter regret](http://rangevoting.org/UniqBest.html).
 
 Features:
 
@@ -27,96 +19,85 @@ Features:
 - Questions can hide voter names (anonymous voting).
 - Questions can be either Range, or Pointing Poker style.
 
-Tech used:
+## Tech used:
 
-- [Java Spark](https://github.com/perwendel/spark), [Bootstrap v4](https://github.com/twbs/bootstrap), [Angular4](https://github.com/angular/angular), [Angular-cli](https://github.com/angular/angular-cli), [ng2-bootstrap](http://valor-software.com/ng2-bootstrap/), [ActiveJDBC](http://javalite.io/activejdbc), [Liquibase](http://www.liquibase.org/), [Postgres](https://www.postgresql.org/), [Markdown-it](https://github.com/markdown-it/markdown-it), [angular2-toaster](https://github.com/Stabzs/Angular2-Toaster)
+- [Bootstrap v4](https://github.com/twbs/bootstrap)
+- 
 
-Check out a sample poll [here](http://simplevote.tk/#/poll/jR).
-
-[Change log](https://github.com/dessalines/simple-vote/issues/closed)
 
 ## Screenshots
 
 ![image](https://i.imgur.com/ZXPI8e1.png)
 
----
+
+## Philosophy
+* KISS by design and programming. An acronym for "keep it simple, stupid" or "keep it stupid simple", is a design principle. The KISS principle states that most systems work best if they are kept simple rather than made complicated; therefore, simplicity should be a key goal in design, and unnecessary complexity should be avoided. Variations on the phrase include: "Keep it simple, silly", "keep it short and simple", "keep it simple and straightforward", "keep it small and simple", or "keep it stupid simple".
+
+* Select the best tools for the job, use tools that take less time to finish the job.
+* Productivity over complexity and avoid unnecessary complexity for elegant or beauty code.
+
+* Computers are machines, more powerful every year, give them hard work, concentrate on being productive.
+
+
+## Community ##
+
+* Website, videos, photos, docs, etc. ()
+
+## Issues and Bug Traking ##
+Please submit *bug reports* or *feature requests* on GitHub:
+* [Issue | Request Features](https://github.com/JavierCanon/quorum.net/issues)
+
+## Requeriments ##
+
+* Windows 8.1, 10.
+* .Net Framework 4.8.
+
 
 ## Installation 
 
-*If you want to self-host or help develop simplevote.*
+*If you want to self-host or help develop.**
 
-### Docker
+* [Download Last Build](https://github.com/JavierCanon/quorum.net/releases)
+* [Old Installers](https://github.com/JavierCanon/quorum.net/releases)
 
-#### Requirements
+## Development Dependencies and Licenses Requirements ##
 
-- Docker
-- docker-compose
+* Microsoft Windows 8.1, 10.
+* Microsoft .Net Framework Target 4.8
 
-#### Start the docker instance
+## Contributing
 
-```sh
-git clone https://github.com/dessalines/simple-vote
-cd simple-vote
-// edit ARG ENDPOINT_NAME=http://localhost:4567 in ./Dockerfile to your hostname
-docker-compose up
-```
+Please read [CONTRIBUTING.md](/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
 
-Goto to http://localhost:4567
 
-### Local development
+## Versioning
 
-#### Requirements
-- Java 8 + Maven
-- Node + npm/yarn, [nvm](https://github.com/creationix/nvm) is the preferred installation method.
-- angular-cli: `npm i -g @angular/cli@latest`
-- Postgres 9.3 or higher
+We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
 
-#### Download SimpleVote
-`git clone https://github.com/dessalines/simple-vote`
+## Authors
 
-#### Setup a postgres database
-[Here](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-postgresql-on-ubuntu-16-04) are some instructions to get your DB up and running.
+* **Javier Cañon** - *Initial work* - [www.JavierCanon.com](https://www.javiercanon.com)
 
-```sh
-psql -c "create user simplevote with password 'asdf' superuser"
-psql -c 'create database simplevote with owner simplevote;'
-```
+See also the list of [contributors](/AUTHORS.md) who participated in this project.
 
-#### Open your pom.xml
-```sh
-cd simplevote
-vim service/pom.xml
-```
 
-Edit it to point to your own database:
-```xml
-<!--The Database location and login, here's a sample-->
-<jdbc.url>jdbc:postgresql://127.0.0.1/simplevote</jdbc.url>
-<jdbc.username>simplevote</jdbc.username>
-<jdbc.password>asdf</jdbc.password
-```
+## Supported by, thanks to 
 
-#### Install SimpleVote
 
-For local testing: 
+![Caphyon](https://raw.githubusercontent.com/JavierCanon/Social-Office-Browser/master/docs/img/advanced-installer-iconNavLogo.png)
 
-`./install_dev.sh` and goto `http://localhost:4567/`
+[Caphyon Advanced Installer](https://www.advancedinstaller.com) 
+--
 
-For a production environment, edit `ui/src/environments/environment.prod.ts` to point to your hostname, then run:
+![Softcanon](https://github.com/JavierCanon/Social-Office-Webackeitor/raw/master/docs/images/logo_softcanon_200x75.gif) 
 
-`./install_prod.sh`
+[Softcanon](https://www.softcanon.com)
+--
 
-You can redirect ports in linux to route from port 80 to this port:
+## License
 
-`sudo iptables -t nat -I PREROUTING -p tcp --dport 80 -j REDIRECT --to-ports 4567`
+This project is licensed under the GNU AFFERO GENERAL PUBLIC LICENSE Version 3 - see the [LICENSE.md](/LICENSE.md) file for details.
 
 ---
-
-## Bugs and feature requests
-Have a bug or a feature request? If your issue isn't [already listed](https://github.com/dessalines/simple-vote/issues/), then open a [new issue here](https://github.com/dessalines/simple-vote/issues/new).
-
-
-## TODO
-
-- Set up travis-ci
+Made with ❤️ by **[Javier Cañon](https://www.javiercanon.com)**.
 
