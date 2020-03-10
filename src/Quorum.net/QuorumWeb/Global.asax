@@ -1,0 +1,1 @@
+<%@ Application Codebehind="~/Global/Global.cs" Inherits="QuorumWeb.Global" Language="C#" %>

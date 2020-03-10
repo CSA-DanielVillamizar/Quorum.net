@@ -1,0 +1,634 @@
+/* Common */
+body {
+    /* DXCOMMENT: Duplicate a font family and font size from the web.config (devexpress->themes->font settings) for the web-site's HTML content */
+    font: 16px 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif;
+}
+
+/* Article Layout */
+.text-content {
+    min-height: 100%;
+    max-width: 816px;
+    margin: 0px auto;
+    padding: 0px 14px 0px 14px;
+    word-wrap: break-word;
+}
+
+@media (min-width: 816px) {
+    .text-content {
+        padding: 0px 48px;
+    }
+}
+
+/* Base Styles */
+.text-content {
+    color: #666;
+    line-height: 1.5;
+}
+
+    .text-content p {
+        margin-top: 0;
+        margin-bottom: 1rem;
+    }
+
+    /* Headers */
+    .text-content h1, .text-content h2, .text-content h3, .text-content h4, .text-content h5, .text-content h6 {
+        color: #444;
+        font-weight: normal;
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    .text-content h3, .text-content h4, .text-content h5, .text-content h6 {
+        font-weight: 600;
+    }
+
+    .text-content h1 {
+        font-size: 2em;
+    }
+
+    .text-content h2 {
+        font-size: 1.75em;
+    }
+
+    .text-content h3 {
+        font-size: 1.375em;
+    }
+
+    .text-content h4 {
+        font-size: 1.25em;
+    }
+
+    .text-content h5 {
+        font-size: 1.125em;
+    }
+
+    .text-content h6 {
+        font-size: 1em;
+    }
+
+    .text-content > h1:not(:first-child) {
+        margin-top: 1.75rem;
+    }
+
+    .text-content > h2:not(:first-child) {
+        margin-top: 1.5rem;
+    }
+
+    .text-content > h3:not(:first-child) {
+        margin-top: 1.25rem;
+    }
+
+    .text-content > h4:not(:first-child) {
+        margin-top: 1.125rem;
+    }
+
+    .text-content > h5:not(:first-child) {
+        margin-top: 1rem;
+    }
+
+    .text-content > h6:not(:first-child) {
+        margin-top: .9rem;
+    }
+
+    /* Title + Lead */
+    .text-content .title {
+        margin-top: 1.2rem;
+        margin-bottom: .8rem;
+    }
+
+@media (min-width: 576px) {
+    .text-content .title {
+        color: #222;
+        font-size: 2em;
+        font-weight: 600;
+    }
+}
+
+.text-content .lead {
+    font-size: 1.125rem;
+    font-weight: 300;
+}
+
+@media (min-width: 576px) {
+    .text-content .lead {
+        max-width: 80%;
+        margin-bottom: 1rem;
+        font-size: 1.5rem;
+    }
+}
+
+.text-content > h2.category {
+    color: #222;
+    font-weight: 600;
+}
+
+    .text-content > h2.category:not(:first-child) {
+        margin-top: 3rem;
+    }
+
+
+/* #href bookmark jump */
+.text-content > h1[id]::before,
+.text-content > h2[id]::before,
+.text-content > h3[id]::before,
+.text-content > h4[id]::before {
+    display: block;
+    height: calc(3.13rem + 1.2rem); /* Main Menu Height (3.13rem) + .title margin-top = 1.2rem */
+    margin-top: calc(-3.13rem - 1.2rem);
+    visibility: hidden;
+    content: "";
+}
+
+
+/* Link */
+.text-content a {
+    /* DXCOMMENT: Duplicates color from the web.config (devexpress->themes->baseColor) */
+    color: #00468C;
+}
+
+    .text-content a:visited {
+        /* DXCOMMENT: Duplicates color from the web.config (devexpress->themes->baseColor) */
+        color: #003469; /* 25% black overlay */
+    }
+
+    .text-content a:hover {
+        /* DXCOMMENT: Duplicates color from the web.config (devexpress->themes->baseColor) */
+        color: #5986B4; /* 35% white overlay */
+    }
+
+.text-content b, .text-content strong {
+    color: #444;
+}
+
+mark {
+    /* DXCOMMENT: Duplicates color from the web.config (devexpress->themes->baseColor) */
+    background-color: #00468C;
+    color: #fff;
+}
+
+small {
+    color: #999999;
+    font-size: 0.75em;
+}
+
+code, pre {
+    font-family: Consolas, Menlo, Monaco, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.875em;
+}
+
+hr {
+    height: 1px;
+    opacity: 0.1;
+    background-color: #000000;
+    border: 0;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+blockquote {
+    background-color: #f2f2f2;
+    color: #444;
+    margin: 0;
+    margin-bottom: 1rem;
+    font-size: 1.125em;
+    padding: 29px 26px;
+    border: 0;
+    border-left: 6px solid #d8d8d8;
+}
+
+    blockquote p {
+        margin-top: 0;
+    }
+
+    blockquote footer {
+        display: block;
+        font-size: 0.875em;
+        font-style: italic;
+        color: #999;
+    }
+
+        blockquote footer::before {
+            content: "\2014 \00A0";
+        }
+
+/* Contents (Left Panel) */
+.section-caption.contents-caption {
+    padding-left: 31px;
+    border-top: none !important;
+}
+
+
+/* Lists */
+.text-content ul,
+.text-content ol {
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+@media (min-width: 992px) {
+    .bd-content > ul, .bd-content > ol, .bd-content > p {
+        max-width: 80%;
+    }
+}
+
+/* Text Alignment */
+.text-center {
+    text-align: center !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+.indent-p {
+    padding-left: 40px;
+    padding-right: 20px;
+}
+
+.bordered-block {
+    background-color: #f2f2f2;
+    padding: 1.5rem;
+    margin-right: 0;
+    margin-left: 0;
+    border-width: .2rem;
+}
+
+@media (min-width: 576px) {
+    .bordered-block {
+        padding: 1.5rem;
+        margin-right: 0;
+        margin-left: 0;
+        border-width: .2rem;
+    }
+}
+
+/* Tables */
+.table {
+    margin-bottom: 1rem;
+    background-color: transparent;
+    border-collapse: collapse;
+}
+
+    .table td,
+    .table th {
+        padding: .75em;
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        vertical-align: top;
+        border-top: 1px solid #dee2e6;
+        text-align: left;
+    }
+
+    .table thead th {
+        border-bottom: 1px solid #d8d8d8;
+        background-color: #f2f2f2;
+        color: #222;
+    }
+
+    .table thead tr {
+        box-shadow: 0px 2px 4px 0 rgba(0, 0, 0, 0.23);
+    }
+
+    .table tbody + tbody {
+        border-top: 1px solid #dee2e6;
+    }
+
+.table-bordered {
+    border: 1px solid #dee2e6;
+}
+
+    .table-bordered td,
+    .table-bordered th {
+        border: 1px solid #dee2e6
+    }
+
+    .table-bordered thead td,
+    .table-bordered thead th {
+        border-bottom-width: 1px
+    }
+
+.table-responsive {
+    max-width: 100%;
+    overflow-x: auto;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+/* Code, Control Area Block */
+.control-area-block {
+    max-width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+}
+
+/* Images */
+.img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+
+.img-float-left {
+    float: left;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+@media (max-width: 576px) {
+    .img-float-left {
+        padding-right: 16px;
+        padding-bottom: 16px;
+    }
+}
+
+/* Printing Styles */
+@media print {
+    .menu-container, .left-block, .right-block,
+    .footer-wrapper {
+        display: none !important;
+    }
+
+    .left-panel {
+        display: none !important;
+    }
+
+    .text-content {
+        max-width: 100%;
+    }
+
+    html {
+        padding: 0 !important;
+    }
+
+    .page-toolbar-wrapper {
+        display: none !important;
+    }
+}
+
+.button {
+    text-decoration: none !important;
+    border-top: 1px solid #CCCCCC !important;
+    border-right: 1px solid #333333 !important;
+    border-bottom: 1px solid #333333 !important;
+    border-left: 1px solid #CCCCCC !important;
+    color: #fff !important;
+    background-color: #00468C !important;
+    padding: 1px !important;
+    font: 14px 'Segoe UI', Helvetica, 'Droid Sans', Tahoma, Geneva, sans-serif !important;
+    -webkit-transition-property: box-shadow, background-color;
+    -moz-transition-property: box-shadow, background-color;
+    -o-transition-property: box-shadow, background-color;
+    transition-property: box-shadow, background-color;
+    -webkit-transition-duration: .3s;
+    -moz-transition-duration: .3s;
+    -o-transition-duration: .3s;
+    transition-duration: .3s;
+    -webkit-transition-timing-function: ease-out;
+    -moz-transition-timing-function: ease-out;
+    -o-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+    -webkit-tap-highlight-color: #0000;
+    margin: 5px;
+}
+
+    .button:hover {
+        background-color: #CCCCCC !important;
+    }
+
+/* grids */
+
+.tdCaption {
+    font-weight: bold;
+    vertical-align: top;
+    text-align: right;
+}
+
+.dxgvSearchPanel_Office365 {
+    width: 600px;
+}
+
+.gridDataRow {
+    background-color: white;
+    color: black;
+}
+
+.gridDataSelectedRow {
+    font-weight: bold;
+    background-color: aquamarine;
+    color: black;
+}
+
+.gridDataRowAlt {
+    background-color: #ffffe8;
+    color: black;
+}
+
+.gridDataHover {
+    font-weight: bold;
+    background-color: #f4b400;
+    color: white;
+}
+
+.detailRow-1Col, .gridEditForm {
+    max-width: 600px !important;
+    min-width: 300px !important;
+}
+
+.gridSearchPanel {
+    max-width: 600px;
+}
+
+/* end grids */
+
+/* filters */
+
+/* end filters */
+
+/* alerts */
+
+.alert {
+    position: relative;
+    padding: 0.75rem 1.25rem;
+    margin-bottom: 1rem;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+}
+
+.alert-heading {
+    color: inherit;
+}
+
+.alert-link {
+    font-weight: 700;
+}
+
+.alert-dismissible {
+    padding-right: 4rem;
+}
+
+    .alert-dismissible .close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0.75rem 1.25rem;
+        color: inherit;
+    }
+
+.alert-primary {
+    color: #004085;
+    background-color: #cce5ff;
+    border-color: #b8daff;
+}
+
+    .alert-primary hr {
+        border-top-color: #9fcdff;
+    }
+
+    .alert-primary .alert-link {
+        color: #002752;
+    }
+
+.alert-secondary {
+    color: #383d41;
+    background-color: #e2e3e5;
+    border-color: #d6d8db;
+}
+
+    .alert-secondary hr {
+        border-top-color: #c8cbcf;
+    }
+
+    .alert-secondary .alert-link {
+        color: #202326;
+    }
+
+.alert-success {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+    .alert-success hr {
+        border-top-color: #b1dfbb;
+    }
+
+    .alert-success .alert-link {
+        color: #0b2e13;
+    }
+
+.alert-info {
+    color: #0c5460;
+    background-color: #d1ecf1;
+    border-color: #bee5eb;
+}
+
+    .alert-info hr {
+        border-top-color: #abdde5;
+    }
+
+    .alert-info .alert-link {
+        color: #062c33;
+    }
+
+.alert-warning {
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+    .alert-warning hr {
+        border-top-color: #ffe8a1;
+    }
+
+    .alert-warning .alert-link {
+        color: #533f03;
+    }
+
+.alert-danger {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+    .alert-danger hr {
+        border-top-color: #f1b0b7;
+    }
+
+    .alert-danger .alert-link {
+        color: #491217;
+    }
+
+.alert-light {
+    color: #818182;
+    background-color: #fefefe;
+    border-color: #fdfdfe;
+}
+
+    .alert-light hr {
+        border-top-color: #ececf6;
+    }
+
+    .alert-light .alert-link {
+        color: #686868;
+    }
+
+.alert-dark {
+    color: #1b1e21;
+    background-color: #d6d8d9;
+    border-color: #c6c8ca;
+}
+
+    .alert-dark hr {
+        border-top-color: #b9bbbe;
+    }
+
+    .alert-dark .alert-link {
+        color: #040505;
+    }
+
+/* end alerts */
+
+/* loading dots */
+
+.loading:after {
+    color: #0160E7;
+    font-size: large;
+    font-weight: 300;
+    content: ' ...';
+    animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+    0%, 20% {
+        opacity: .2;
+    }
+
+    40% {
+        opacity: 1;
+    }
+
+    60% {
+        opacity: .1;
+    }
+
+    80%, 100% {
+        opacity: .2;
+    }
+}
+
+
+table.dashboarTable {
+    width: auto !important;
+}
+
+table.dashboarTable td {
+    border: 2px solid #00468C;
+    padding: 10px;
+}
+
+.dashboardGrid {
+    margin: auto !important;
+}
