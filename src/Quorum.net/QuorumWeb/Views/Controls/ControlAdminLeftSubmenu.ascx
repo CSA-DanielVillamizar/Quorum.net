@@ -11,6 +11,9 @@
             <Nodes>
                 <dx:TreeViewNode NavigateUrl="~/Views/Admin/Organizations.aspx" Text="Empresas" Target="_self"></dx:TreeViewNode>
                 <dx:TreeViewNode NavigateUrl="~/Views/Admin/Voters.aspx" Text="Votantes" Target="_self"></dx:TreeViewNode>
+                <dx:TreeViewNode NavigateUrl="~/Views/Admin/Questions.aspx" Text="Preguntas" Target="_self"></dx:TreeViewNode>
+                <dx:TreeViewNode NavigateUrl="~/Views/Admin/QuestionsAnswers.aspx" Text="Respuestas" Target="_self"></dx:TreeViewNode>
+
                 <dx:TreeViewNode NavigateUrl="~/Views/Admin/VoterCategory.aspx" Text="Categorias Votantes" Target="_self"></dx:TreeViewNode>
             </Nodes>
         </dx:TreeViewNode>

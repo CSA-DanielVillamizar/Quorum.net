@@ -1,0 +1,65 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Root.master.cs" Inherits="QuorumMobile.Views.Masters.Root" %>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server" enableviewstate="false">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" /> 
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <title></title>
+
+    <link href='<%# ResolveUrl("~/Content/bootstrap.min.css") %>' rel="stylesheet" />
+    <link href='<%# ResolveUrl("~/Content/fontawesome-all.min.css") %>' rel="stylesheet" />
+    <link href='<%# ResolveUrl("~/Content/Site.css") %>' rel="stylesheet" />
+    
+    <script type="text/javascript" src='<%# ResolveUrl("/Scripts/jquery-3.4.1.min.js") %>'></script>
+    <script type="text/javascript" src='<%# ResolveUrl("/Scripts/bootstrap.bundle.min.js") %>'></script>
+
+    <asp:ContentPlaceHolder ID="Head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+            <div class="container">
+                <div>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#topMenu" aria-controls="topMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Quorum.net | Votación Preguntas</a>
+                </div>
+                <div class="collapse navbar-collapse" id="topMenu">
+
+                    <dx:BootstrapMenu ID="TopMenu" runat="server" ShowPopOutImages="True" ItemAutoWidth="false" ClientInstanceName="topMenu">
+                        <CssClasses Control="top-menu" Menu="navbar-nav" />
+                        <Items>
+
+
+                        </Items>
+                    </dx:BootstrapMenu>
+
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <asp:ContentPlaceHolder ID="Content" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <hr />
+
+            <footer>
+                <p><%= QuorumMobile.Global.GetCredits() %></p>
+            </footer>
+        </div>
+    </form>
+</body>
+</html>

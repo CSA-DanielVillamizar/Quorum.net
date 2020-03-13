@@ -91,6 +91,8 @@
     <Content Include="robots.txt" />
     <Content Include="safari-pinned-tab.svg" />
     <Content Include="Views\Admin\Administration.aspx" />
+    <Content Include="Views\Admin\QuestionsAnswers.aspx" />
+    <Content Include="Views\Admin\Questions.aspx" />
     <Content Include="Views\Admin\Voters.aspx" />
     <Content Include="Views\Admin\VoterCategory.aspx" />
     <Content Include="Views\Admin\Organizations.aspx" />
@@ -190,6 +192,7 @@
     <Content Include="Content\v4-shims.css" />
     <Content Include="Content\v4-shims.min.css" />
     <Content Include="Views\Controls\ControlAdminLeftSubmenu.ascx" />
+    <Content Include="Views\Dashboards\DashboardQuestions.aspx" />
     <Content Include="Views\Dashboards\DashboardAttendees.aspx" />
     <Content Include="Views\Dashboards\Dashboards.aspx" />
     <Content Include="Views\Login.aspx" />
@@ -397,6 +400,20 @@
     <Compile Include="Views\Admin\Administration.aspx.designer.cs">
       <DependentUpon>Administration.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Views\Admin\QuestionsAnswers.aspx.cs">
+      <DependentUpon>QuestionsAnswers.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\QuestionsAnswers.aspx.designer.cs">
+      <DependentUpon>QuestionsAnswers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Admin\Questions.aspx.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Admin\Questions.aspx.designer.cs">
+      <DependentUpon>Questions.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Views\Admin\Voters.aspx.cs">
       <DependentUpon>Voters.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -418,13 +435,19 @@
     <Compile Include="Views\Admin\Organizations.aspx.designer.cs">
       <DependentUpon>Organizations.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Debug\DebugHelper.cs" />
     <Compile Include="Views\Controls\ControlAdminLeftSubmenu.ascx.cs">
       <DependentUpon>ControlAdminLeftSubmenu.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Views\Controls\ControlAdminLeftSubmenu.ascx.designer.cs">
       <DependentUpon>ControlAdminLeftSubmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Dashboards\DashboardQuestions.aspx.cs">
+      <DependentUpon>DashboardQuestions.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Dashboards\DashboardQuestions.aspx.designer.cs">
+      <DependentUpon>DashboardQuestions.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Dashboards\DashboardAttendees.aspx.cs">
       <DependentUpon>DashboardAttendees.aspx</DependentUpon>
@@ -470,7 +493,7 @@
     <Compile Include="Global\Global.Version.cs" />
     <Compile Include="Models\AuthHelper.cs" />
     <Compile Include="Models\DBContext.cs" />
-    <Compile Include="Models\Versions.cs" />
+    <Compile Include="Global\Versions.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Views\Masters\Basic.Master.cs">
       <DependentUpon>Basic.Master</DependentUpon>
@@ -504,6 +527,7 @@
   <ItemGroup>
     <Folder Include="App_Data\Logs\" />
     <Folder Include="App_GlobalResources\" />
+    <Folder Include="Debug\" />
     <Folder Include="Presenters\" />
   </ItemGroup>
   <ItemGroup>

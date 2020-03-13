@@ -27,6 +27,7 @@ namespace QuorumWeb {
     public partial class Root : MasterPage {
         public bool EnableBackButton { get; set; }
         protected void Page_Load(object sender, EventArgs e) {
+
             if(!string.IsNullOrEmpty(Page.Header.Title))
                 Page.Header.Title += " - ";
             Page.Header.Title = Page.Header.Title + " Quorum.net";

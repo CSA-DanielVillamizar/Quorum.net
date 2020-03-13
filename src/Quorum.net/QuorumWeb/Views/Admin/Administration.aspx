@@ -16,8 +16,7 @@
 <asp:Content ID="Content4" ContentPlaceHolderID="PageToolbar" runat="server">
 </asp:Content>
 <asp:Content ID="Content5" ContentPlaceHolderID="PageContent" runat="server">
-
-
+    
         <h3>Seleccione una opción del submenu laterial izquierdo...</h3>
 
 </asp:Content>

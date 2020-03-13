@@ -107,7 +107,7 @@ namespace QuorumWeb
                 return _AppCredits;
             }
 
-            _AppCredits = "<a href=\"https://www.javiercanon.com/\" target=\"_blank\">Quorum.net</a> Ver.[" + Global.Versions.GetAppVersion() + "] &copy; 2020 - " + System.DateTime.Now.Year.ToString() + " <a href=\"https://www.javiercanon.com/\" target=\"_blank\">Javier Cañon</a>";
+            _AppCredits = "<a href=\"https://github.com/JavierCanon/quorum.net/\" target=\"_blank\">Quorum.net</a> Ver.[" + Global.Versions.GetAppVersion() + "] &copy; 2020 - " + System.DateTime.Now.Year.ToString() + " by <a href=\"https://www.javiercanon.com/\" target=\"_blank\">Javier Cañon</a>";
 
             return _AppCredits;
         }

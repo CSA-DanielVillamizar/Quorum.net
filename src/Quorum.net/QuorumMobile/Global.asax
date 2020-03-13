@@ -1,0 +1,1 @@
+<%@ Application Codebehind="~/Global/Global.cs" Inherits="QuorumMobile.Global" Language="C#" %>

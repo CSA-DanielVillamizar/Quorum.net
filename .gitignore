@@ -260,8 +260,13 @@ paket-files/
 __pycache__/
 *.pyc
 
-# logs
-src/Quorum.net/QuorumWeb/App_Data/Logs/*.*
+# logs and temps
+/src/Quorum.net/QuorumMobile/App_Data/Logs
+/src/Quorum.net/QuorumWeb/App_Data/Logs
+
+/src/Quorum.net/QuorumMobile/DXTempFolder
+/src/Quorum.net/QuorumWeb/DXTempFolder
+
 
 # exe libs
 libs/
@@ -274,3 +279,4 @@ files/
 # custom
 *.licx*
 *.zip
+

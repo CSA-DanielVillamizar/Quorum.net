@@ -44,6 +44,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuorumWeb", "QuorumWeb\Quor
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{29063BB0-3BC5-49BC-AD5B-7A0DFFF6ED6E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuorumMobile", "QuorumMobile\QuorumMobile.csproj", "{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -58,6 +60,10 @@ Global
 		{0928DDAD-C0D7-41F5-A605-9A65A7251643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0928DDAD-C0D7-41F5-A605-9A65A7251643}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0928DDAD-C0D7-41F5-A605-9A65A7251643}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

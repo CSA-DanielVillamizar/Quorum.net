@@ -1,8 +1,8 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Views/Masters/Basic.Master" AutoEventWireup="true" CodeBehind="DashboardAttendees.aspx.cs" Inherits="QuorumWeb.Views.Dashboards.DashboardAttendees1" %>
 
 <%@ Register Assembly="DevExpress.XtraCharts.v19.2.Web, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" Namespace="DevExpress.XtraCharts.Web" TagPrefix="dx" %>
-
 <%@ Register TagPrefix="dx" Namespace="DevExpress.XtraCharts" Assembly="DevExpress.XtraCharts.v19.2, Version=19.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" %>
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 
     <script type="text/javascript">
@@ -25,7 +25,14 @@
         function grid_EndCallback(s, e) {
             chart.PerformCallback();
             scheduleGridUpdate(s);
+
+            var today = new Date();
+            var date = today.getFullYear() + '-' + pad(today.getMonth() + 1) + '-' + pad(today.getDate());
+            var time = pad(today.getHours()) + ":" + pad(today.getMinutes()) + ":" + pad(today.getSeconds());
+            var dateTime = date + ' ' + time;
+            document.getElementById("lastUpdate").innerHTML = "Ultima Actualización: " + dateTime;
         }
+        function pad(n) { return n < 10 ? '0' + n : n }
     </script>
 
 </asp:Content>
@@ -46,7 +53,7 @@
                         <Border Visibility="True"></Border>
                     </Legend>
                     <SeriesSerializable>
-                        <dx:Series Name="Series 1" ArgumentDataMember="Name" LabelsVisibility="True" ValueDataMembersSerializable="Quorum" ColorDataMember="Color" LegendTextPattern="{A}: {V}%">
+                        <dx:Series Name="Series 1" ArgumentDataMember="Name" LabelsVisibility="True" ValueDataMembersSerializable="Quorum" ColorDataMember="Color" LegendTextPattern="{A}: {VP:p2}">
                             <ViewSerializable>
                                 <dx:Pie3DSeriesView></dx:Pie3DSeriesView>
                             </ViewSerializable>
@@ -114,7 +121,12 @@
 
             </td>
 
-        </tr>
+            <tr>
+                <td colspan="2">
+
+                    <h3 id="lastUpdate">Ultima Actualización:</h3>
+                </td>
+            </tr>
     </table>
 
     <asp:SqlDataSource runat="server" ID="DataSourceMaster"

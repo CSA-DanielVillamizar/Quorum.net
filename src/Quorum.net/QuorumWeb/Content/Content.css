@@ -624,11 +624,16 @@ table.dashboarTable {
     width: auto !important;
 }
 
-table.dashboarTable td {
-    border: 2px solid #00468C;
-    padding: 10px;
-}
+    table.dashboarTable td {
+        border: 2px solid #00468C;
+        padding: 10px;
+    }
 
 .dashboardGrid {
     margin: auto !important;
+}
+
+table.dashboardsList td {
+    border: 2px solid #00468C;
+    padding: 10px;
 }

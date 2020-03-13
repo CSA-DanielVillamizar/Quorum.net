@@ -13,10 +13,26 @@
 
     <h2 class="section-caption contents-caption">Dashboards</h2>
 
-    <dx:ASPxHyperLink runat="server" EnableViewState="false" CssClass="button"
-        NavigateUrl="~/Views/Dashboards/DashboardAttendees.aspx" Target="_blank"
-        Text="* Quorum" ViewStateMode="Disabled" ValidateRequestMode="Disabled">
-    </dx:ASPxHyperLink>
+    <table class="dashboardsList">
 
+        <tr>
+            <td><i class="fas fa-archive"></i>
+                <dx:ASPxHyperLink runat="server" EnableViewState="false" CssClass="button"
+                    NavigateUrl="~/Views/Dashboards/DashboardAttendees.aspx" Target="_blank"
+                    Text="Quorum" ViewStateMode="Disabled" ValidateRequestMode="Disabled">
+                </dx:ASPxHyperLink>
+            </td>
+        </tr>
+
+        <tr>
+            <td><i class="fas fa-question-circle"></i>
+                <dx:ASPxHyperLink runat="server" EnableViewState="false" CssClass="button"
+                    NavigateUrl="~/Views/Dashboards/DashboardQuestions.aspx" Target="_blank"
+                    Text="Preguntas" ViewStateMode="Disabled" ValidateRequestMode="Disabled">
+                </dx:ASPxHyperLink>
+            </td>
+        </tr>
+
+    </table>
 
 </asp:Content>
