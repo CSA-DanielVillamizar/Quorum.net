@@ -682,7 +682,7 @@ namespace QuorumMobile
                     }
 
 
-                    return ConfigurationManager.ConnectionStrings["Server.MsSqlServer.Main"].ConnectionString;
+                    return ConfigurationManager.ConnectionStrings["MsSqlServer.Main"].ConnectionString;
                 }
 
                 /// <summary>
@@ -702,7 +702,7 @@ namespace QuorumMobile
                         return ConfigurationManager.ConnectionStrings["LocalDB.MsSqlServer.LogServer"].ConnectionString;
                     }
 
-                    return ConfigurationManager.ConnectionStrings["Server.MsSqlServer.LogServer"].ConnectionString;
+                    return ConfigurationManager.ConnectionStrings["MsSqlServer.LogServer"].ConnectionString;
 
                 }
 
@@ -722,7 +722,7 @@ namespace QuorumMobile
                         return ConfigurationManager.ConnectionStrings["LocalDB.MsSqlServer.UserLogServer"].ConnectionString;
                     }
 
-                    return ConfigurationManager.ConnectionStrings["Server.MsSqlServer.UserLogServer"].ConnectionString;
+                    return ConfigurationManager.ConnectionStrings["MsSqlServer.UserLogServer"].ConnectionString;
 
 
                 }

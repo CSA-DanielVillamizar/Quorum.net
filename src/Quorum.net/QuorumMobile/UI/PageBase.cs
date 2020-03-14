@@ -62,11 +62,11 @@ namespace QuorumMobile.UI
             {
                 if (IsCallback)
                 {
-                    Response.RedirectLocation = ResolveUrl("~/Login.aspx?ReturnUrl=" + Request.RawUrl);
+                    Response.RedirectLocation = ResolveUrl("~/Views/Main.aspx?ReturnUrl=" + Request.RawUrl);
                 }
                 else
                 {
-                    Response.Redirect("~/Login.aspx?ReturnUrl=" + Request.RawUrl);
+                    Response.Redirect("~/Views/Main.aspx?ReturnUrl=" + Request.RawUrl);
                 }
             }
 
@@ -110,7 +110,7 @@ namespace QuorumMobile.UI
             {
                 Session.Clear();
                 Session.Abandon();
-                Response.Redirect("~/Web/Login.aspx?ReturnUrl=" + Request.RawUrl);
+                Response.Redirect("~/Views/Main.aspx?ReturnUrl=" + Request.RawUrl);
             }
         }
 

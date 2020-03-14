@@ -196,7 +196,7 @@ namespace QuorumMobile
             /// <returns></returns>
             public static bool GetIsValidSession()
             {
-                if (HttpContext.Current.Session["User.UserID"] != null)
+                if (HttpContext.Current.Session["User.VoteCode"] != null)
                 {
                     return true;
                 }

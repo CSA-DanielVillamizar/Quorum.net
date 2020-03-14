@@ -33,12 +33,12 @@
         <Nodes>
             <dx:TreeViewNode Text="Dashboards">
                 <Nodes>
-                    <dx:TreeViewNode NavigateUrl="xxx" Text="Quorum" Target="_blank"></dx:TreeViewNode>
+                    <dx:TreeViewNode NavigateUrl="~/Views/Dashboards/Dashboards.aspx" Text="Quorum" Target="_blank"></dx:TreeViewNode>
                 </Nodes>
             </dx:TreeViewNode>
-            <dx:TreeViewNode Text="Consultas">
+            <dx:TreeViewNode Text="Consultas" Visible="false">
                 <Nodes>
-                    <dx:TreeViewNode NavigateUrl="xxx" Text="Asistencia" Target="_blank"></dx:TreeViewNode>
+                    <dx:TreeViewNode NavigateUrl="~/Views/Queries/Queries.aspx" Text="Asistencia" Target="_blank"></dx:TreeViewNode>
                 </Nodes>
             </dx:TreeViewNode>
         </Nodes>

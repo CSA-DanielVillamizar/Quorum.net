@@ -267,6 +267,7 @@ __pycache__/
 /src/Quorum.net/QuorumMobile/DXTempFolder
 /src/Quorum.net/QuorumWeb/DXTempFolder
 
+*.bak
 
 # exe libs
 libs/

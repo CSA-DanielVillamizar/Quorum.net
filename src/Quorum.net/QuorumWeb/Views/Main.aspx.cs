@@ -17,11 +17,13 @@
 // LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
 // FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 // IN THE SOFTWARE.
+using QuorumWeb.UI;
 using System;
 using System.IO;
 
 namespace QuorumWeb.Views {
-    public partial class Main : System.Web.UI.Page {
+    public partial class Main : PageBase
+    {
         protected void Page_Load(object sender, EventArgs e) {
             
 

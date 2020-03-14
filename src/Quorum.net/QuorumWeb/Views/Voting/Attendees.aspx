@@ -214,7 +214,7 @@
 
             </dx:GridViewDataComboBoxColumn>
 
-            <dx:GridViewDataTextColumn FieldName="GUIDCHECKSUM" Caption="Contraseña" Visible="true" VisibleIndex="4" Width="100" ReadOnly="True">
+            <dx:GridViewDataTextColumn FieldName="VoteCode" Caption="Contraseña" Visible="true" VisibleIndex="4" Width="100" ReadOnly="True">
                 <EditFormSettings Visible="False"></EditFormSettings>
                 <PropertiesTextEdit Password="false"></PropertiesTextEdit>
             </dx:GridViewDataTextColumn>
@@ -330,7 +330,7 @@
 
             <DetailRow>
 
-                <p><b>Contraseña:</b> <%# Eval("GUIDCHECKSUM") %></p>
+                <p><b>Contraseña:</b> <%# Eval("VoteCode") %></p>
 
             </DetailRow>
 
@@ -345,7 +345,7 @@
         OnSelecting="DBMainDataSources_Selecting"
         DeleteCommand="DELETE FROM [Attendees] WHERE [ID] = @ID"
         InsertCommand="INSERT INTO [Attendees] ([OrganizationsID], [VotersID], [VoterCategoryID]) VALUES (@OrganizationsID, @VotersID, @VoterCategoryID)"
-        SelectCommand="SELECT [ID], [OrganizationsID], [VotersID], [VoterCategoryID], [GUID], [GUIDCHECKSUM]  FROM [Attendees]"
+        SelectCommand="SELECT [ID], [OrganizationsID], [VotersID], [VoterCategoryID], [GUID], [VoteCode]  FROM [Attendees]"
         UpdateCommand="UPDATE [Attendees] SET [OrganizationsID] = @OrganizationsID, [VotersID] = @VotersID, [VoterCategoryID] = @VoterCategoryID WHERE [ID] = @ID">
         <DeleteParameters>
             <asp:Parameter Name="ID" Type="Int32"></asp:Parameter>

@@ -62,11 +62,11 @@ namespace QuorumWeb.UI
             {
                 if (IsCallback)
                 {
-                    Response.RedirectLocation = ResolveUrl("~/Login.aspx?ReturnUrl=" + Request.RawUrl);
+                    Response.RedirectLocation = ResolveUrl("~/Views/Login.aspx?ReturnUrl=" + Request.RawUrl);
                 }
                 else
                 {
-                    Response.Redirect("~/Login.aspx?ReturnUrl=" + Request.RawUrl);
+                    Response.Redirect("~/Views/Login.aspx?ReturnUrl=" + Request.RawUrl);
                 }
             }
 
@@ -110,7 +110,7 @@ namespace QuorumWeb.UI
             {
                 Session.Clear();
                 Session.Abandon();
-                Response.Redirect("~/Web/Login.aspx?ReturnUrl=" + Request.RawUrl);
+                Response.Redirect("~/Views/Login.aspx?ReturnUrl=" + Request.RawUrl);
             }
         }
 
