@@ -624,16 +624,24 @@ table.dashboarTable {
     width: auto !important;
 }
 
-    table.dashboarTable td {
-        border: 2px solid #00468C;
-        padding: 10px;
+    table.dashboarTable tr td {
+        border: 1px solid #00468C;
+        padding: 5px;
+        vertical-align: top;
     }
 
-.dashboardGrid {
+table.dashboardGrid {
     margin: auto !important;
 }
 
-table.dashboardsList td {
-    border: 2px solid #00468C;
-    padding: 10px;
+    table.dashboardGrid tr td {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+table.dashboardsList tr td {
+    padding: 5px;
+    vertical-align: top;
 }

@@ -11,6 +11,11 @@ namespace QuorumWeb.Views.Masters
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!string.IsNullOrEmpty(Page.Header.Title))
+                Page.Header.Title += " - ";
+            Page.Header.Title = Page.Header.Title + " Quorum.net";
+
+            Page.Header.DataBind();
 
         }
     }

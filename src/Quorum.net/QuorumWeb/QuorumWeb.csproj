@@ -317,6 +317,7 @@
     <Content Include="Scripts\umd\popper-utils.min.js" />
     <Content Include="Scripts\umd\popper.js" />
     <Content Include="Scripts\umd\popper.min.js" />
+    <Content Include="Views\Queries\GridAttendees.aspx" />
     <Content Include="Views\Queries\Queries.aspx" />
     <Content Include="Views\Voting\Attendees.aspx" />
     <Content Include="Web.config" />
@@ -508,6 +509,13 @@
     </Compile>
     <Compile Include="Views\Masters\Root.master.designer.cs">
       <DependentUpon>Root.master</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Queries\GridAttendees.aspx.cs">
+      <DependentUpon>GridAttendees.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Views\Queries\GridAttendees.aspx.designer.cs">
+      <DependentUpon>GridAttendees.aspx</DependentUpon>
     </Compile>
     <Compile Include="Views\Queries\Queries.aspx.cs">
       <DependentUpon>Queries.aspx</DependentUpon>

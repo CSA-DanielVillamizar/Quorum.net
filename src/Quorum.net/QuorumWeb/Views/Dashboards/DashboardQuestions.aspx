@@ -14,7 +14,7 @@
                     gridAnswers.Refresh();
                     chart.PerformCallback();
                 },
-                5000
+                10000
             );
         }
         function grid_Init(s, e) {
@@ -32,7 +32,7 @@
             var dateTime = date + ' ' + time;
             document.getElementById("lastUpdate").innerHTML = "Ultima Actualización: " + dateTime;
         }
-        function pad(n) { return n < 10 ? '0' + n : n }
+        function pad(n) { return n < 10 ? '0' + n : n; }
     </script>
 
 </asp:Content>
@@ -92,7 +92,9 @@
                     AutoGenerateColumns="False" EnableRowsCache="true"
                     CssClass="dashboardGrid"
                     SettingsText-Title="Respuestas"
-                    KeyFieldName="ID">
+                    KeyFieldName="ID"     
+                    Font-Size="XX-Small"
+                    >
 
 
                     <SettingsBehavior EnableRowHotTrack="False"

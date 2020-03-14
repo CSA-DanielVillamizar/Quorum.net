@@ -3,8 +3,9 @@
 <!DOCTYPE html>
 
 <html>
-<head runat="server">
+<head runat="server" enableviewstate="false">
     <title></title>
+    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Content.css") + "?v=1.0.0" %>' />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>

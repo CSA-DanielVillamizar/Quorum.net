@@ -15,10 +15,10 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="theme-color" content="#ffffff" />
 
-    <link href='<%# ResolveUrl("~/Content/fontawesome-all.min.css") %>' rel="stylesheet" />
-    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Content.css") %>' />
-    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Layout.css") %>' />
-    <script type="text/javascript" src='<%# ResolveUrl("~/Content/Script.js") %>'></script>
+    <link href='<%# ResolveUrl("~/Content/fontawesome-all.min.css") + "?v=1.0.0" %>' rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Content.css")+ "?v=1.0.0"  %>' />
+    <link rel="stylesheet" type="text/css" href='<%# ResolveUrl("~/Content/Layout.css") + "?v=1.0.0" %>' />
+    <script type="text/javascript" src='<%# ResolveUrl("~/Content/Script.js") + "?v=1.0.0" %>'></script>
 
     <title></title>
     <asp:ContentPlaceHolder ID="Head" runat="server"></asp:ContentPlaceHolder>

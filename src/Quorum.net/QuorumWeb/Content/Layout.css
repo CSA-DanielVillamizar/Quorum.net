@@ -104,13 +104,27 @@ html, .form {
         }
 
 .header-logo {
+    background: url('Images/logo.png') no-repeat center;
+    height: 26px;
+    width: 88px;
+}
+
+@media (max-width: 359px) {
+    .header-logo {
+        background: url('Images/logo.png') no-repeat center;
+        height: 26px;
+        width: 88px;
+    }
+}
+
+.header-logo-quorum {
     background: url('Images/quorum_logo_150x26.png') no-repeat center;
     height: 26px;
     width: 150px;
 }
 
 @media (max-width: 359px) {
-    .header-logo {
+    .header-logo-quorum {
         background: url('Images/quorum_logo_150x26.png') no-repeat center;
         height: 26px;
         width: 150px;

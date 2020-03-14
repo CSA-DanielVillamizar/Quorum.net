@@ -13,7 +13,7 @@
                 function () {
                     grid.Refresh();
                 },
-                5000
+                60000
             );
         }
         function grid_Init(s, e) {
@@ -32,7 +32,7 @@
             var dateTime = date + ' ' + time;
             document.getElementById("lastUpdate").innerHTML = "Ultima Actualización: " + dateTime;
         }
-        function pad(n) { return n < 10 ? '0' + n : n }
+        function pad(n) { return n < 10 ? '0' + n : n; }
     </script>
 
 </asp:Content>
@@ -49,7 +49,9 @@
                         <dx:SimpleDiagram3D RotationMatrixSerializable="0.912329138300601;-0.306710104574815;0.271264548290762;0;0.407921851979479;0.738155773422579;-0.537332128985925;0;-0.0354302989730128;0.6008784951341;0.798554774577215;0;0;0;0;1"></dx:SimpleDiagram3D>
                     </DiagramSerializable>
 
-                    <Legend Name="Default Legend" AlignmentHorizontal="Center">
+                    <Legend Name="Default Legend" AlignmentHorizontal="Center" EnableAntialiasing="True" Font="Tahoma, 12pt, style=Bold" Visibility="True">
+                        <BackImage Stretch="True"></BackImage>
+
                         <Border Visibility="True"></Border>
                     </Legend>
                     <SeriesSerializable>
@@ -68,8 +70,7 @@
                 </dx:WebChartControl>
 
             </td>
-
-
+            
             <td>
 
                 <dx:ASPxGridView ID="ASPxGridView1" ClientInstanceName="grid" runat="server"
@@ -78,7 +79,9 @@
                     AutoGenerateColumns="False" EnableRowsCache="false"
                     CssClass="dashboardGrid"
                     SettingsText-Title="Asistencia"
-                    KeyFieldName="OrganizationsID">
+                    KeyFieldName="OrganizationsID"
+                    Font-Size="XX-Small"
+                    >
 
 
                     <SettingsBehavior EnableRowHotTrack="False"
@@ -121,12 +124,14 @@
 
             </td>
 
-            <tr>
-                <td colspan="2">
+        </tr>
 
-                    <h3 id="lastUpdate">Ultima Actualización:</h3>
-                </td>
-            </tr>
+        <tr>
+            <td colspan="2">
+
+                <h3 id="lastUpdate">Ultima Actualización:</h3>
+            </td>
+        </tr>
     </table>
 
     <asp:SqlDataSource runat="server" ID="DataSourceMaster"
