@@ -28,8 +28,8 @@ Polls can be dynamic, meaning users can(*if allowed*) contribute options and que
 - [ ] Questions can have thresholds (making sure options with too few votes don't win). 
 - [ ] Image and description support for all questions and candidates.
 - [ ] Multiple answers for Questions.
-- [ ] Android Mobile client for voting.
-- [ ] IOS Mobile client for voting.
+- [ ] Android Mobile native app client for voting.
+- [ ] IOS Mobile native app client for voting.
 
 
 ## Tech used:
