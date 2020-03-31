@@ -3,50 +3,53 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{866F56C3-0DD2-45C4-9938-18EAABF91818}"
-	ProjectSection(SolutionItems) = preProject
-		.editorconfig = .editorconfig
-		..\..\.gitignore = ..\..\.gitignore
-		..\..\ACKNOWLEDGMENTS.md = ..\..\ACKNOWLEDGMENTS.md
-		..\..\AUTHORS.md = ..\..\AUTHORS.md
-		..\..\CHANGELOG.md = ..\..\CHANGELOG.md
-		..\..\CODE_OF_CONDUCT.md = ..\..\CODE_OF_CONDUCT.md
-		..\..\CONTRIBUTING.md = ..\..\CONTRIBUTING.md
-		..\..\LICENSE.md = ..\..\LICENSE.md
-		..\..\README.md = ..\..\README.md
-		..\..\RELEASE.md = ..\..\RELEASE.md
-		..\..\ROADMAP.md = ..\..\ROADMAP.md
-		..\..\TODO.md = ..\..\TODO.md
-	EndProjectSection
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuorumWeb", "src\QuorumWeb\QuorumWeb.csproj", "{0928DDAD-C0D7-41F5-A605-9A65A7251643}"
 EndProject
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "docs", "..\..\docs\", "{EFBFB532-0297-4042-9361-47CDFB27E251}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuorumMobile", "src\QuorumMobile\QuorumMobile.csproj", "{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "docs", "docs\", "{EFBFB532-0297-4042-9361-47CDFB27E251}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
 		Debug.AspNetCompiler.VirtualPath = "/localhost_21704"
-		Debug.AspNetCompiler.PhysicalPath = "..\..\docs\"
+		Debug.AspNetCompiler.PhysicalPath = "docs\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_21704\"
 		Debug.AspNetCompiler.Updateable = "true"
 		Debug.AspNetCompiler.ForceOverwrite = "true"
 		Debug.AspNetCompiler.FixedNames = "false"
 		Debug.AspNetCompiler.Debug = "True"
 		Release.AspNetCompiler.VirtualPath = "/localhost_21704"
-		Release.AspNetCompiler.PhysicalPath = "..\..\docs\"
+		Release.AspNetCompiler.PhysicalPath = "docs\"
 		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_21704\"
 		Release.AspNetCompiler.Updateable = "true"
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "21704"
-		SlnRelativePath = "..\..\docs\"
+		SlnRelativePath = "docs\"
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuorumWeb", "QuorumWeb\QuorumWeb.csproj", "{0928DDAD-C0D7-41F5-A605-9A65A7251643}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{07F33A0B-1644-4B8A-93B8-485FD01E9C64}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		ACKNOWLEDGMENTS.md = ACKNOWLEDGMENTS.md
+		AUTHORS.md = AUTHORS.md
+		CHANGELOG.md = CHANGELOG.md
+		CODE_OF_CONDUCT.md = CODE_OF_CONDUCT.md
+		CONTRIBUTING.md = CONTRIBUTING.md
+		LICENSE.md = LICENSE.md
+		Quorum.net.sln.licenseheader = Quorum.net.sln.licenseheader
+		README.md = README.md
+		RELEASE.md = RELEASE.md
+		ROADMAP.md = ROADMAP.md
+		TODO.md = TODO.md
+	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{29063BB0-3BC5-49BC-AD5B-7A0DFFF6ED6E}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "QuorumMobile", "QuorumMobile\QuorumMobile.csproj", "{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}"
-EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DB", "DB", "{E037405D-12EB-4FE8-8500-4A22A9C72C55}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Database", "Database", "{05A2558F-F400-4EAD-9862-0438E25D6533}"
+	ProjectSection(SolutionItems) = preProject
+		src\DB\quorumDB.sql = src\DB\quorumDB.sql
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -54,10 +57,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{EFBFB532-0297-4042-9361-47CDFB27E251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFBFB532-0297-4042-9361-47CDFB27E251}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EFBFB532-0297-4042-9361-47CDFB27E251}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{EFBFB532-0297-4042-9361-47CDFB27E251}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{0928DDAD-C0D7-41F5-A605-9A65A7251643}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{0928DDAD-C0D7-41F5-A605-9A65A7251643}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0928DDAD-C0D7-41F5-A605-9A65A7251643}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -66,6 +65,10 @@ Global
 		{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AC4ED822-BD9C-4F7A-BB41-AC4A5BBFD3E9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EFBFB532-0297-4042-9361-47CDFB27E251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFBFB532-0297-4042-9361-47CDFB27E251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EFBFB532-0297-4042-9361-47CDFB27E251}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{EFBFB532-0297-4042-9361-47CDFB27E251}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

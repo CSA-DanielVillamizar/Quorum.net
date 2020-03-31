@@ -45,7 +45,7 @@
                                     <Image Url="~/Content/Images/back.svg" Height="18px" Width="18px" />
                                 </dx:MenuItem>
                                 <dx:MenuItem Text="" ItemStyle-CssClass="image-item vertically-aligned" NavigateUrl="~/Views/Main.aspx">
-                                    <Image SpriteProperties-CssClass="header-logo" />
+                                    <Image SpriteProperties-CssClass="header-logo-quorum" />
                                 </dx:MenuItem>
                             </Items>
                             <ClientSideEvents ItemClick="onLeftMenuItemClick" />

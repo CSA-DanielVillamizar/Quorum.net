@@ -12,17 +12,22 @@ Polls can be dynamic, meaning users can(*if allowed*) contribute options and que
 
 - [X] Register to assembly.
 - [X] Live Quorum Dashboard.
+- [X] Live Questions Dashboard.
+- [X] Polls can have multiple questions.
+- [X] Web Responsive Mobile client for voting, share the URL.
+- [X] Questions are anonymous voting.
 
 ## Future Features:
 
-- [ ] Polls can have multiple questions.
+- [ ] Users and Roles.
+- [ ] Questions can show voter names.
 - [ ] Anyone can edit, delete, or create additional questions, and options (if allowed by the creator), at anytime.
-- [ ] Live chat on the sidebar. 
-- [ ] Questions can have expiration times, and thresholds (Making sure options with too few votes don't win). 
-- [ ] Easily shareable poll links.
-- [ ] Image and markdown support for all questions and candidates.
-- [ ] Questions can hide voter names (anonymous voting).
-- [ ] Questions can be either Range, or Pointing Poker style.
+- [ ] Public Live chat on the sidebar.
+- [ ] Private mobile chat. 
+- [ ] Questions can have expiration times.
+- [ ] Questions can have thresholds (making sure options with too few votes don't win). 
+- [ ] Image and description support for all questions and candidates.
+- [ ] Multiple answers for Questions.
 - [ ] Android Mobile client for voting.
 - [ ] IOS Mobile client for voting.
 
@@ -36,7 +41,12 @@ Polls can be dynamic, meaning users can(*if allowed*) contribute options and que
 
 ## Screenshots
 
-![image](https://i.imgur.com/ZXPI8e1.png)
+![screenshoot]("docs/screenshoots/Annotation-2020-03-30-200815.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201129.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201304.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201350.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201544.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201735.png")
 
 
 ## Philosophy of Javier Cañon
