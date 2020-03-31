@@ -42,11 +42,11 @@ Polls can be dynamic, meaning users can(*if allowed*) contribute options and que
 ## Screenshots
 
 ![screenshoot](docs/screenshoots/Annotation-2020-03-30-200815.png)
-![screenshoot](docs/screenshoots/Annotation 2020-03-30 201129.png)
-![screenshoot](docs/screenshoots/Annotation 2020-03-30 201304.png)
-![screenshoot](docs/screenshoots/Annotation 2020-03-30 201350.png)
-![screenshoot](docs/screenshoots/Annotation 2020-03-30 201544.png)
-![screenshoot](docs/screenshoots/Annotation 2020-03-30 201735.png)
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201129.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201304.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201350.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201544.png")
+![screenshoot]("docs/screenshoots/Annotation 2020-03-30 201735.png")
 
 
 ## Philosophy of Javier Cañon
